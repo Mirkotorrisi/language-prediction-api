@@ -1,15 +1,15 @@
-2025-07-25 22:18:23,534 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:18:23,534 [INFO] app: Received POST on /identify-language endpoint, text: Ciao!
 2025-07-25 22:18:25,282 [ERROR] app: Error occurred while identifying language: Iterable over raw text documents expected, string object received.
-2025-07-25 22:19:40,699 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:19:40,699 [INFO] app: Received POST on /identify-language endpoint, text: Ciao!
 2025-07-25 22:19:41,946 [ERROR] app: Error occurred while identifying language: index 1 is out of bounds for axis 0 with size 1
-2025-07-25 22:23:13,334 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:23:13,334 [INFO] app: Received POST on /identify-language endpoint, text: Ciao!
 2025-07-25 22:23:13,334 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
 2025-07-25 22:23:15,020 [INFO] app: Output: ['IT']
 2025-07-25 22:23:15,020 [ERROR] app: Error occurred while identifying language: index 1 is out of bounds for axis 0 with size 1
-2025-07-25 22:25:04,437 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:25:04,437 [INFO] app: Received POST on /identify-language endpoint, text: Ciao!
 2025-07-25 22:25:04,437 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
 2025-07-25 22:25:06,022 [INFO] app: Output: ['IT']
-2025-07-25 22:25:26,169 [INFO] app: Received POST on /identify-language endpoint, text: Jesus is a pig
+2025-07-25 22:25:26,169 [INFO] app: Received POST on /identify-language endpoint, text: HI
 2025-07-25 22:25:26,169 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
 2025-07-25 22:25:26,170 [INFO] app: Output: ['EN']
 2025-07-25 22:28:19,713 [INFO] app: Received POST on /identify-language endpoint, text: 555
