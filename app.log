@@ -1,0 +1,35 @@
+2025-07-25 22:18:23,534 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:18:25,282 [ERROR] app: Error occurred while identifying language: Iterable over raw text documents expected, string object received.
+2025-07-25 22:19:40,699 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:19:41,946 [ERROR] app: Error occurred while identifying language: index 1 is out of bounds for axis 0 with size 1
+2025-07-25 22:23:13,334 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:23:13,334 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:23:15,020 [INFO] app: Output: ['IT']
+2025-07-25 22:23:15,020 [ERROR] app: Error occurred while identifying language: index 1 is out of bounds for axis 0 with size 1
+2025-07-25 22:25:04,437 [INFO] app: Received POST on /identify-language endpoint, text: Dio porco!
+2025-07-25 22:25:04,437 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:25:06,022 [INFO] app: Output: ['IT']
+2025-07-25 22:25:26,169 [INFO] app: Received POST on /identify-language endpoint, text: Jesus is a pig
+2025-07-25 22:25:26,169 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:25:26,170 [INFO] app: Output: ['EN']
+2025-07-25 22:28:19,713 [INFO] app: Received POST on /identify-language endpoint, text: 555
+2025-07-25 22:28:19,714 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:28:19,715 [INFO] app: Output: ['EN']
+2025-07-25 22:31:17,318 [INFO] app: Received POST on /identify-language endpoint, text: 
+2025-07-25 22:31:17,319 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:31:17,321 [INFO] app: Output: ['EN']
+2025-07-25 22:32:36,815 [INFO] app: Received POST on /identify-language endpoint, text: 
+2025-07-25 22:32:36,815 [ERROR] app: Error occurred while identifying language: Invalid input: 'text' must be a non-empty string.
+2025-07-25 22:33:18,533 [INFO] app: Received POST on /identify-language endpoint, text: 
+2025-07-25 22:39:08,599 [INFO] app: Received POST on /identify-language endpoint, text: Hallo
+2025-07-25 22:39:08,599 [INFO] app: Loading model from assets/language_detection_pipeline.pkl
+2025-07-25 22:39:08,603 [INFO] app: Output: language_code='EN' confidence=0.95
+2025-07-25 22:40:32,944 [INFO] app: Received POST on /identify-language endpoint, text: Hallo
+2025-07-25 22:40:32,946 [INFO] app: Output: language_code='EN' confidence=0.95
+2025-07-25 22:40:47,955 [INFO] app: Received POST on /identify-language endpoint, text: ich spreche deutsch
+2025-07-25 22:40:47,956 [INFO] app: Output: language_code='EN' confidence=0.95
+2025-07-25 22:42:29,997 [INFO] app: Received POST on /identify-language endpoint, text: ich spreche deutsch
+2025-07-25 22:42:29,998 [ERROR] app: Error occurred while identifying language: not enough values to unpack (expected 2, got 1)
+2025-07-25 22:45:09,554 [INFO] app: Received POST on /identify-language endpoint, text: ich spreche deutsch
+2025-07-25 22:45:09,555 [INFO] app: Predicted language: EN
+2025-07-25 22:45:09,556 [INFO] app: Output: language_code='EN'
