@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from models.prediction_payload import PredictionPayload
 from models.prediction_output import PredictionOutput
 from typing_extensions import Annotated
@@ -15,8 +15,11 @@ def identify_language(body: Annotated[PredictionPayload, Body()]) -> PredictionO
     logger.info(f"Received POST on /identify-language endpoint, text: {body.text}")
     try:
         res = predict_language(body.text)
-        return res
 
     except Exception as e:
         logger.error(f"Error occurred while identifying language: {e}") 
-        raise Exception("Error occurred while identifying language")
+        raise HTTPException(status_code=500, detail="Something went wrong while predicting language")
+
+    if(not res.language_code):
+        raise HTTPException(status_code=404, detail="Language not found")
+    return res
