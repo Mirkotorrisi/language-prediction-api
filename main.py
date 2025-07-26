@@ -17,6 +17,7 @@ from typing_extensions import Annotated
 class PredictionOutput(BaseModel):
     '''Represents the output of a prediction.'''
     language_code: str = Field(..., description="Predicted language code")
+    confidence: float = Field(..., description="Confidence score of the prediction")
 
 
 class PredictionPayload(BaseModel):
@@ -67,6 +68,7 @@ def identify_language(body: Annotated[PredictionPayload, Body()]) -> PredictionO
 logger.info("Loading pre-trained language detection pipeline from pickle file...")
 filename = 'assets/language_detection_pipeline.pkl'
 loaded_pipeline = pickle.load(open(filename, 'rb'))
+lang_classes = loaded_pipeline.classes_
 
 
 # Service function to predict language
@@ -79,10 +81,10 @@ def predict_language(text: str) -> PredictionOutput:
     Returns:
         PredictionOutput: The predicted language code.
     '''
-    predicted_language = loaded_pipeline.predict([text])
-    logger.info(f"Predicted language: {predicted_language[0]}")
-
-    output = PredictionOutput(language_code=predicted_language[0])
+    predicted_proba = loaded_pipeline.predict_proba([text])
+    confidence = predicted_proba.max(axis=1)
+    predicted_language = lang_classes[predicted_proba.argmax(axis=1)]
+    output = PredictionOutput(language_code=predicted_language[0], confidence=confidence[0])
     logger.info(f"Output: {output}")
 
     return output

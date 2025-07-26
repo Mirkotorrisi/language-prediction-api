@@ -106,3 +106,44 @@
 2025-07-26 14:11:07,618 [ERROR] app: Error occurred while identifying language: 
 2025-07-26 14:11:13,678 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
 2025-07-26 14:11:45,732 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-26 20:25:47,272 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-26 20:25:58,368 [INFO] app: Received POST on /identify-language endpoint, text: Ciaociaociao
+2025-07-26 20:25:58,370 [INFO] app: Predicted language: [1.38263024e-11 4.48897876e-03 9.95511021e-01]
+2025-07-26 20:25:58,374 [ERROR] app: Error occurred while identifying language: 1 validation error for PredictionOutput
+language_code
+  Input should be a valid string [type=string_type, input_value=array([1.38263024e-11, 4....76e-03, 9.95511021e-01]), input_type=ndarray]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-07-27 00:13:34,139 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:15:15,188 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:15:47,297 [INFO] app: Received POST on /identify-language endpoint, text: Ciaociaociao
+2025-07-27 00:15:47,299 [ERROR] app: Error occurred while identifying language: 1 validation error for PredictionOutput
+language_code
+  Input should be a valid string [type=string_type, input_value=array([1.38263024e-11, 4....76e-03, 9.95511021e-01]), input_type=ndarray]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-07-27 00:17:11,977 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:17:18,678 [INFO] app: Received POST on /identify-language endpoint, text: Ciaociaociao
+2025-07-27 00:17:18,684 [ERROR] app: Error occurred while identifying language: 1 validation error for PredictionOutput
+language_code
+  Input should be a valid string [type=string_type, input_value=array([1.38263024e-11, 4....76e-03, 9.95511021e-01]), input_type=ndarray]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-07-27 00:20:54,836 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:21:21,885 [INFO] app: Received POST on /identify-language endpoint, text: Ciaociaociao
+2025-07-27 00:21:21,887 [INFO] app: Output: language_code='IT'
+2025-07-27 00:21:40,471 [INFO] app: Received POST on /identify-language endpoint, text: Hi my name is mirko
+2025-07-27 00:21:40,475 [INFO] app: Output: language_code='DE'
+2025-07-27 00:22:02,404 [INFO] app: Received POST on /identify-language endpoint, text: Hello darkness my old friend
+2025-07-27 00:22:02,405 [INFO] app: Output: language_code='EN'
+2025-07-27 00:22:23,919 [INFO] app: Received POST on /identify-language endpoint, text: Ciao mi chiamo Gustavo e sono un pescatore
+2025-07-27 00:22:23,920 [INFO] app: Output: language_code='IT'
+2025-07-27 00:23:29,341 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:23:35,288 [INFO] app: Received POST on /identify-language endpoint, text: Ciao mi chiamo Gustavo e sono un pescatore
+2025-07-27 00:23:35,291 [INFO] app: Output: language_code='IT' confidence=0.9999999999924967
+2025-07-27 00:23:54,041 [INFO] app: Received POST on /identify-language endpoint, text: Hallo ich bin Mirko
+2025-07-27 00:23:54,042 [INFO] app: Output: language_code='EN' confidence=0.9802719401582236
+2025-07-27 00:24:22,625 [INFO] app: Received POST on /identify-language endpoint, text: Como estas senorita
+2025-07-27 00:24:22,626 [INFO] app: Output: language_code='IT' confidence=0.9950466770418477
+2025-07-27 00:24:50,049 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:24:52,560 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:25:14,622 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:25:27,585 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
+2025-07-27 00:26:02,964 [INFO] app: Loading pre-trained language detection pipeline from pickle file...
